@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位和居中</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            margin: 0 auto;
+            background-color: #ccc;
+            width: 400px;
+            position: relative;
+            top: 50%;
+            overflow: hidden;
+            transform:translateY(-50%);
+            -moz-transform:translateY(-50%);
+            -webkit-transform:translateY(-50%);
+            -o-transform:translateY(-50%);
+            -ms-transform:translateY(-50%);
+        }
+        .container p{
+            margin:50px;
+            word-wrap : break-word;
+        }
+        .circle{
+            height:50px;
+            width:50px;
+            background-color: #fc0;
+            position:absolute;
+        }
+        #con1{
+            border-bottom-right-radius: 50px;
+            top:0;
+            left:0;
+        }
+        #con2{
+            border-top-left-radius: 50px;
+            bottom:0;
+            right:0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <p>盒子的高度随内容变化</p>
+    <div class="circle" id="con1"></div>
+    <div class="circle" id="con2"></div>
+</div>
+
+</body>
+</html>
