@@ -1,0 +1,114 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task </title>
+</head>
+
+<style>
+    *{
+        padding:0;
+        margin:0;
+    }
+    .content{
+        width:90%;
+        height:500px;
+        text-align: center;
+        margin : 20px auto;
+        border:1px solid black;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        padding-top:10px;
+    }
+    .content section{
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+    }
+    .content label{
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: bold;
+    }
+    .content .message{
+        margin-left: 70px;
+    }
+    .content #id1{
+        margin-left: -70px;
+    }
+    .result #city{
+        font-size: 14px;
+        margin-left: 20px;
+        width:200px;
+        height:30px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    .result #university{
+        font-size: 14px;
+        margin-left: 20px;
+        width:300px;
+        height:30px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    .result #work{
+        font-size: 14px;
+        margin-left: 20px;
+        margin-right: 40px;;
+        width:530px;
+        height:30px;
+        border:1px solid rgb(169, 169, 169);
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    .result{
+        display: none;
+    }
+</style>
+
+<script src="task.js" type="text/javascript"></script>
+
+
+<body>
+
+<form class="content">
+    <section id="id1">
+        <input class="message" type="radio" id="student" />
+        <label>在校生</label>
+        <input class="message" type="radio" id="no_student" />
+        <label>非在校生</label>
+    </section>
+
+    <section class="result" id="school">
+        <label>学校</label>
+        <select name="city" id="city">
+            <option selected="selected"></option>
+            <option >北京</option>
+            <option>上海</option>
+            <option>杭州</option>
+        </select>
+
+        <select name="university" id="university">
+            <option selected="selected"></option>
+            <option>北京大学</option>
+            <option>清华大学</option>
+            <option>北京师范大学</option>
+        </select>
+
+    </section>
+
+    <section class="result" id="company">
+        <label>就业单位</label>
+        <input type="text" name="content" id="work" />
+    </section>
+
+</form>
+
+
+</body>
+</html>
