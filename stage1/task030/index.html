@@ -1,0 +1,126 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task </title>
+</head>
+
+<style>
+    *{
+        padding:0;
+        margin:0;
+    }
+    .content{
+        width:90%;
+        height:500px;
+        text-align: center;
+        margin : 20px auto;
+        border:1px solid black;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        padding-top:10px;
+    }
+    .content section{
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        position: relative;
+        height: 2em;
+    }
+    .content label{
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: bold;
+        position:absolute;
+        right: 60%;
+        top:15px;
+    }
+    .content .message{
+        position:absolute;
+        left: 43%;
+        width:300px;
+        height:30px;
+        text-indent: 2em;
+        border:1px solid #9d9d9d;
+        outline: none;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+    .content #button{
+        height:30px;
+        width:80px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        background-color: #46b8da;
+        outline: none;
+        border:none;
+        color:white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: -65px;
+    }
+    .content #button:hover {
+        background-color: #269abc;
+    }
+    .content p{
+        color:#9d9d9d;
+        font-size: 14px;
+        position:absolute;
+        top:45px;
+        left: 43%;
+        visibility: hidden;
+    }
+
+</style>
+<script src="task.js" type="text/javascript"></script>
+
+
+<body>
+
+<form class="content">
+    <section>
+        <label>名称</label>
+        <input class="message" type="text" name="content" />
+        <p class="information">
+            必填，长度为4-16个字符
+        </p>
+    </section>
+    <section>
+        <label>密码</label>
+        <input class="message" type="password" name="content" />
+        <p class="information">
+            6到16位数字和字母
+        </p>
+    </section>
+    <section>
+        <label>密码确认</label>
+        <input class="message" type="password" name="content" />
+        <p class="information">
+            必填，长度为4~16个字符
+        </p>
+    </section>
+    <section>
+        <label>邮箱</label>
+        <input class="message" type="text" name="content" />
+        <p class="information">
+            必填，长度为4~16个字符
+        </p>
+    </section>
+    <section>
+        <label>手机</label>
+        <input class="message" type="text" name="content" />
+        <p class="information">
+            必填，长度为4~16个字符
+        </p>
+    </section>
+    <section>
+        <button id="button">验证</button>
+    </section>
+</form>
+
+
+</body>
+</html>
